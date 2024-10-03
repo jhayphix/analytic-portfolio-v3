@@ -61,12 +61,49 @@ body::-webkit-scrollbar-thumb:hover {
   | App layout container
   |----------------------------------------
 */
-
 #app_layout_container {
   background-color: var(--bg_primary_1) !important;
   color: var(--text_secondary_1) !important;
+  margin: 0;
+  padding-top: 10px;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
+#side_navigation {
+  border: 1px dotted gray;
+}
+#main_content_wrapper {
+  height: 100%;
+  overflow-y: scroll;
+  /* background-color: var(--bg_primary_1); */
+  border-radius: 10px;
+  padding: 0 !important;
+}
+
+
+/* width */
+#main_content_wrapper::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+#main_content_wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  background: var(--bg_primary_1);
+}
+
+/* Handle */
+#main_content_wrapper::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background: var(--bg_accent_1);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+#main_content_wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /*
   |----------------------------------------
   | Back to top 

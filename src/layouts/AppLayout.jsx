@@ -59,15 +59,21 @@ const AppLayout = ({ children }) => {
   return (
     <div
       id="app_layout_container"
-      className="bg_shape_grp_1"
+      className="bg_shape_grp_1 container-fluid row"
       data-theme={theme}
     >
-      <Navigation />
-      {children}
-      {showBackToTop && <BackToTopButton />}
-      {showChatOnWhatsapp && <ChatOnWhatsappButton />}
-      <MobileNav />
-      <Footer />
+      <div id="side_navigation" className="col-md-2 col-0"></div>
+
+      <div id="main_content_wrapper" className="col-md-10 col-12">
+        <Navigation />
+
+        {children}
+
+        {showBackToTop && <BackToTopButton />}
+        {showChatOnWhatsapp && <ChatOnWhatsappButton />}
+        <MobileNav />
+        <Footer />
+      </div>
     </div>
   );
 };
