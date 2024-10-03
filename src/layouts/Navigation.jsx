@@ -31,7 +31,6 @@ const Navigation = () => {
   const { switchTheme, theme } = useContext(ThemeContext);
   const [nav_scrolled, setNavScrolled] = useState(false);
   const [link_clicked, setLinkClicked] = useState(false);
-
   /*
   |----------------------------------------
   |  Functions
