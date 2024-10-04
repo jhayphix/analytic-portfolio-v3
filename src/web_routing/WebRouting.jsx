@@ -57,7 +57,7 @@ const WebRouting = () => {
         <Route path={dashboard?.path} element={<ProjectDetailsPage />} />
 
         {/* Not found */}
-        <Route path="*" element="Not Found" />
+        <Route path="*" element="Page Not Found" />
       </Routes>
     </AnimatePresence>
   );

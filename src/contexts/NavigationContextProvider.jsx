@@ -54,7 +54,9 @@ const NavigationContextProvider = ({ children }) => {
   */
   const resume_path = `${base_route}/doc/resume.pdf`
   const projectDetailsURL = (category, slug, id) => {
-    const path = `${base_route}/p/${category}/${slug}-${id}`;
+    // const path = `${base_route}/p/${category}/${slug}-${id}`;
+    // Not using category anymore
+    const path = `${base_route}/p/${slug}-${id}`;
     return path;
   };
 
