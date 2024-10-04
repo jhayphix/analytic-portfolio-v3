@@ -56,6 +56,7 @@ const NavigationContextProvider = ({ children }) => {
   |----------------------------------------
   */
   const resume_path = `${base_route}/documents/resume.pdf`;
+  const web_dev_url = "https://jhayphix.github.io/portfolio";
 
   const projectDetailsURL = (category, slug, id) => {
     // const path = `${base_route}/p/${category}/${slug}-${id}`;
@@ -84,6 +85,7 @@ const NavigationContextProvider = ({ children }) => {
     // Custom path
     projectDetailsURL,
     resume_path,
+    web_dev_url,
   };
 
   /*
