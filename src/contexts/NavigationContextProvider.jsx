@@ -46,7 +46,7 @@ const NavigationContextProvider = ({ children }) => {
   const contact = navigation_db?.contact;
 
   const nav_links = [home, about, experience, portfolio, service, contact];
-  const mobile_nav_links = [contact, home, portfolio];
+  const mobile_nav_links = [home, about, portfolio, service, contact];
 
   /*
   |----------------------------------------
