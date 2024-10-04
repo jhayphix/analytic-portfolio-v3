@@ -25,6 +25,9 @@ export const NavigationContext = createContext({
   dashboard: {},
   service: {},
   contact: {},
+
+  // Custom url
+  resume_path: "",
 });
 
 const NavigationContextProvider = ({ children }) => {
@@ -52,7 +55,8 @@ const NavigationContextProvider = ({ children }) => {
   | Custom route
   |----------------------------------------
   */
-  const resume_path = `${base_route}/doc/resume.pdf`
+  const resume_path = `${base_route}/documents/resume.pdf`;
+
   const projectDetailsURL = (category, slug, id) => {
     // const path = `${base_route}/p/${category}/${slug}-${id}`;
     // Not using category anymore
@@ -79,7 +83,7 @@ const NavigationContextProvider = ({ children }) => {
 
     // Custom path
     projectDetailsURL,
-    resume_path
+    resume_path,
   };
 
   /*
