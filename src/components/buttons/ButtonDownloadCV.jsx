@@ -8,12 +8,10 @@ import { NavigationContext } from "@contexts/NavigationContextProvider";
 import ButtonDocument from "@components/buttons/ButtonDocument";
 
 const ButtonDownloadCV = () => {
-  const { base_route } = useContext(NavigationContext);
-  console.log(base_route)
-  const cv_path = `${base_route}/doc/resume.pdf`;
+  const { resume_path } = useContext(NavigationContext);
 
   const handleDownloadClick = () => {
-    window.open(cv_path, "_blank");
+    window.open(resume_path, "_blank");
   };
 
   return (
